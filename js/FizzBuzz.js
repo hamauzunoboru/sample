@@ -32,7 +32,7 @@ FizzBuzz.prototype.getFizzBuzz = _getFizzBuzz;
 
 // åƒÇ—èoÇµå≥
 function dispTest() {
-	var fizzBuzzTest = new FizzBuzz(30);
+	var fizzBuzzTest = new FizzBuzz(50);
 	document.getElementById("test").innerHTML = fizzBuzzTest.doFizzBuzz();
 }
 
