@@ -1,7 +1,9 @@
+// クラス
 function FizzBuzz(value) {
 	this.maxValue = value;
 }
 
+// インスタンスメソッド
 function _doFizzBuzz() {
 	var test = "1";
 	var result;
@@ -13,6 +15,7 @@ function _doFizzBuzz() {
 }
 FizzBuzz.prototype.doFizzBuzz = _doFizzBuzz;
 
+// インスタンスメソッド
 function _getFizzBuzz(value) {
 	var resultFizz = ( value % 3 == 0 );
 	var resultBuzz = ( value % 5 == 0 );
@@ -27,6 +30,7 @@ function _getFizzBuzz(value) {
 }
 FizzBuzz.prototype.getFizzBuzz = _getFizzBuzz;
 
+// 呼び出し元
 function dispTest() {
 	var fizzBuzzTest = new FizzBuzz(30);
 	document.getElementById("test").innerHTML = fizzBuzzTest.doFizzBuzz();
