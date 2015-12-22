@@ -5,13 +5,13 @@ function FizzBuzz(value) {
 
 // インスタンスメソッド
 function _doFizzBuzz() {
-	var test = "1";
+	var resultFizzBuzz = "1";
 	var result;
 	for( var i = 2; i <= this.maxValue ; i++ ) {
 		result = this.getFizzBuzz(i);
-		test = test + "," + result;
+		resultFizzBuzz = resultFizzBuzz + "," + result;
 	}
-	return test;
+	return teresultFizzBuzzst;
 }
 FizzBuzz.prototype.doFizzBuzz = _doFizzBuzz;
 
